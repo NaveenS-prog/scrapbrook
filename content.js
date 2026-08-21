@@ -8,7 +8,6 @@ window.scrapbookContent = {
   coverDetailTwo: "To: Mridula",
   coverDetailThree: "Occasion: Raksha Bandhan",
   coverPrimaryButton: "Open the scrapbook",
-  coverSecondaryButton: "Edit guide",
 
   introTitle: "A little note to start with...",
   introText:

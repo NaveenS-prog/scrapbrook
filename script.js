@@ -255,14 +255,7 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll(".page").forEach((page) => observer.observe(page));
 
-// Edit guide dialog
-const dialog = document.querySelector("[data-edit-dialog]");
-document.querySelector("[data-open-editor-help]")?.addEventListener("click", () => {
-  if (dialog?.showModal) dialog.showModal();
-});
-document.querySelector("[data-close-dialog]")?.addEventListener("click", () => {
-  dialog?.close();
-});
+
 
 // Final Confetti click handler
 document.querySelector("[data-confetti]")?.addEventListener("click", (event) => {
