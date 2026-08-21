@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>For Mridula | Digital Scrapbook</title>
+    <meta
+      name="description"
+      content="An editable Raksha Bandhan digital scrapbook website."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Ga+Maamli&family=Patrick+Hand&family=Great+Vibes&family=Dancing+Script&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="theme-vintage scrapbook-locked">
+    <div class="ambient-paper" aria-hidden="true"></div>
+
+
+
+    <!-- Floating Audio Cassette Player -->
+    <!-- Floating Retro CD Player Button -->
+    <div class="cd-player-widget" id="cd-player-widget">
+      <audio id="bg-music" loop preload="none" src="./assets/audio/frangipani.mp3"></audio>
+      <div class="cd-info-label" id="cd-info-label">Frangipani - Kaber Vasuki</div>
+      <button class="cd-btn" id="cd-button" type="button" aria-label="Toggle music: Frangipani by Kaber Vasuki">
+        <img class="cd-cover-art" src="./assets/images/frangipani-cover.png" alt="" />
+        <span class="cd-spindle" id="cd-spindle-icon">▶</span>
+      </button>
+    </div>
+
+    <!-- Floating Decorative Stickers -->
+    <div class="floating-stickers-container" aria-hidden="true">
+      <div class="sticker sticker-star sticker-pos-1">★</div>
+      <div class="sticker sticker-heart sticker-pos-2">♥</div>
+      <div class="sticker sticker-flower sticker-pos-3">🌸</div>
+      <div class="sticker sticker-sparkle sticker-pos-4">✨</div>
+    </div>
+
+    <main class="scrapbook-shell">
+      <section class="hero" id="cover" aria-labelledby="cover-title">
+        <div class="ribbon" data-content="coverRibbon">Raksha Bandhan scrapbook</div>
+        <div class="cover-card envelope-wrapper" id="envelope-wrapper">
+          <!-- Envelope Base Back -->
+          <div class="envelope-back"></div>
+
+          <!-- Inside Letter (Slides up out of envelope) -->
+          <div class="envelope-letter" id="envelope-letter">
+            <p class="handwritten" data-content="coverHandwritten">
+              To my bestest best friend
+            </p>
+            <h1 id="cover-title" data-content="coverTitle">
+              For My Sister, Mridula
+            </h1>
+            <p class="cover-subtitle" data-content="coverSubtitle">
+              A tiny digital scrapbook filled with memories, arguments, and things I probably don't say often enough.
+            </p>
+            <div class="cover-details" aria-label="Cover details">
+              <span data-content="coverDetailOne">From: Your Brother</span>
+              <span data-content="coverDetailTwo">To: Mridula</span>
+              <span data-content="coverDetailThree">Occasion: Raksha Bandhan</span>
+            </div>
+            <div class="cover-actions">
+              <a class="primary-button" href="#intro" id="enter-scrapbook-btn" data-content="coverPrimaryButton">
+                Open the scrapbook
+              </a>
+            </div>
+          </div>
+
+          <!-- Top Flap (folds up) -->
+          <div class="envelope-flap envelope-flap-top"></div>
+
+          <!-- Bottom Flap (folds down) -->
+          <div class="envelope-flap envelope-flap-bottom"></div>
+
+          <!-- Left Flap (folds left) -->
+          <div class="envelope-flap envelope-flap-left"></div>
+
+          <!-- Right Flap (folds right) -->
+          <div class="envelope-flap envelope-flap-right"></div>
+
+          <!-- Twine Cord Lines and Bow Knot for Envelope Style -->
+          <div class="envelope-twine" id="envelope-twine" aria-hidden="true">
+            <div class="twine twine-horizontal"></div>
+            <div class="twine twine-vertical"></div>
+            <div class="twine-bow"></div>
+          </div>
+
+          <!-- Front Seal trigger action -->
+          <div class="envelope-front-actions" id="envelope-front-actions">
+            <button class="primary-button open-env-btn" type="button" id="open-envelope-btn">
+              💌 Untie & Open Letter
+            </button>
+            <button class="icon-button" type="button" data-open-editor-help>
+              <span data-content="coverSecondaryButton">Edit guide</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <nav class="page-nav" aria-label="Scrapbook sections">
+        <a href="#cover">Cover</a>
+        <a href="#intro">Start</a>
+        <a href="#timeline">Story</a>
+        <a href="#appreciation">Appreciation</a>
+        <a href="#funny">Funny</a>
+        <a href="#thanks">Thank you</a>
+        <a href="#future">10 years</a>
+        <a href="#final">Final</a>
+      </nav>
+
+      <section class="page spread intro-page" id="intro">
+        <div class="page-number">01</div>
+        <div class="page-copy">
+          <p class="kicker">Okay, where do I even start?</p>
+          <h2 data-content="introTitle">
+            This is where your real opening letter goes.
+          </h2>
+          <p data-content="introText">
+            Replace this with a warm, slightly funny opening. Tell her why you
+            made this instead of writing a normal letter, and make it sound like
+            you.
+          </p>
+        </div>
+        <div class="photo-stack" aria-label="Editable photo placeholders">
+          <figure class="photo-card rotate-left">
+            <img data-image="introPhotoOne" src="./assets/photos/placeholder.svg" alt="" />
+            <figcaption data-content="introPhotoOneCaption">Add photo caption</figcaption>
+          </figure>
+          <figure class="photo-card rotate-right">
+            <img data-image="introPhotoTwo" src="./assets/photos/placeholder.svg" alt="" />
+            <figcaption data-content="introPhotoTwoCaption">Another memory</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="page" id="timeline">
+        <div class="page-number">02</div>
+        <div class="section-heading">
+          <p class="kicker">Our story</p>
+          <h2 data-content="timelineTitle">Memory timeline</h2>
+          <p data-content="timelineIntro">
+            Add the moments that matter: how you met, first real conversation,
+            best trip, chaotic screenshots, or any inside joke.
+          </p>
+        </div>
+        <div class="timeline" data-timeline></div>
+      </section>
+
+      <section class="page" id="appreciation">
+        <div class="page-number">03</div>
+        <div class="section-heading">
+          <p class="kicker">Things I do not say enough</p>
+          <h2 data-content="appreciationTitle">Click each card</h2>
+          <p data-content="appreciationIntro">
+            Keep these small and honest. Each card flips open when clicked.
+          </p>
+        </div>
+        <div class="card-grid" data-appreciation-cards></div>
+      </section>
+
+      <section class="page funny-page" id="funny">
+        <div class="page-number">04</div>
+        <div class="section-heading">
+          <p class="kicker">The annoying sister section</p>
+          <h2 data-content="funnyTitle">Evidence board of nonsense</h2>
+          <p data-content="funnyIntro">
+            Add the dramatic, irritating, lovable things you can tease her about.
+          </p>
+        </div>
+        <div class="note-wall" data-funny-notes></div>
+      </section>
+
+      <section class="page spread" id="thanks">
+        <div class="page-number">05</div>
+        <div class="page-copy">
+          <p class="kicker">When things were hard</p>
+          <h2 data-content="thanksTitle">The real thank-you page</h2>
+          <p data-content="thanksTextOne">
+            This page is for the serious part. Write what she did for you, what
+            it meant, and what you never properly thanked her for.
+          </p>
+          <p data-content="thanksTextTwo">
+            Keep it simple. The quieter this page is, the more it will land.
+          </p>
+        </div>
+        <figure class="polaroid-large">
+          <img data-image="thanksPhoto" src="./assets/photos/placeholder.svg" alt="" />
+          <figcaption data-content="thanksPhotoCaption">
+            Add a meaningful photo here
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="page" id="future">
+        <div class="page-number">06</div>
+        <div class="section-heading">
+          <p class="kicker">Ten years from now</p>
+          <h2 data-content="futureTitle">Future promises and predictions</h2>
+          <p data-content="futureIntro">
+            Add funny predictions, promises, and the things you hope are still
+            true ten years from now.
+          </p>
+        </div>
+        <div class="future-grid" data-future-items></div>
+      </section>
+
+      <section class="page final-page" id="final">
+        <div class="page-number">07</div>
+        <div class="final-photo-frame">
+          <img data-image="finalPhoto" src="./assets/photos/placeholder.svg" alt="" />
+        </div>
+        <div class="final-copy">
+          <p class="handwritten" data-content="finalEyebrow">Final page placeholder</p>
+          <h2 data-content="finalTitle">Happy Raksha Bandhan, idiot.</h2>
+          <p data-content="finalMessage">
+            Replace this with your final short message. Distance does not have
+            to make this feel smaller.
+          </p>
+
+          <button class="primary-button" type="button" data-confetti>
+            One last click
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="edit-dialog" data-edit-dialog>
+      <button class="close-button" type="button" data-close-dialog aria-label="Close">×</button>
+      <h2>Quick edit guide</h2>
+      <p>
+        Open <strong>content.js</strong> to change the words and image paths.
+        Put photos inside <strong>assets/photos</strong>, then use paths like
+        <strong>./assets/photos/your-photo.jpg</strong>.
+      </p>
+      <p>
+        The placeholder labels are intentionally obvious so you can replace them
+        one by one without breaking the scrapbook.
+      </p>
+    </dialog>
+
+    <!-- Polaroid Zoom Modal -->
+    <div class="zoom-modal" id="zoom-modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <button class="zoom-close" type="button" aria-label="Close zoomed photo">&times;</button>
+      <div class="zoom-content">
+        <img class="zoom-img" src="" alt="Zoomed Photo" />
+        <div class="zoom-caption"></div>
+      </div>
+    </div>
+
+    <script src="./content.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

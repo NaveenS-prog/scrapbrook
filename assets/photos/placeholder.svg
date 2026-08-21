@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">Photo placeholder</title>
+  <desc id="desc">A decorative placeholder for scrapbook photos.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8d9c9"/>
+      <stop offset="0.52" stop-color="#fff4d0"/>
+      <stop offset="1" stop-color="#cfe9e5"/>
+    </linearGradient>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2" fill="#26211f" opacity=".12"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="700" fill="url(#bg)"/>
+  <rect width="900" height="700" fill="url(#dots)"/>
+  <rect x="152" y="108" width="596" height="428" rx="18" fill="#fffaf0" opacity=".72" stroke="#26211f" stroke-opacity=".18" stroke-width="4"/>
+  <circle cx="330" cy="272" r="62" fill="#d94f70" opacity=".82"/>
+  <path d="M210 494 382 350l104 88 74-64 132 120Z" fill="#3d9a92" opacity=".82"/>
+  <text x="450" y="604" text-anchor="middle" fill="#26211f" font-family="Arial, sans-serif" font-size="42" font-weight="700">Replace with your photo</text>
+</svg>
