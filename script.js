@@ -48,28 +48,7 @@ document.querySelectorAll("[data-image]").forEach((image) => {
   image.alt = image.closest("figure")?.querySelector("figcaption")?.textContent || "";
 });
 
-// Timeline rendering
-const timeline = document.querySelector("[data-timeline]");
-if (timeline) {
-  timeline.innerHTML = (content.timeline || [])
-    .map(
-      (item) => `
-        <article class="timeline-item">
-          <div class="timeline-pin"></div>
-          <figure class="mini-photo">
-            <img src="${item.image}" alt="" />
-          </figure>
-          <div>
-            <p class="timeline-date">${item.date}</p>
-            <p class="timeline-label">${item.label}</p>
-            <h3>${item.title}</h3>
-            <p>${item.text}</p>
-          </div>
-        </article>
-      `
-    )
-    .join("");
-}
+
 
 // Appreciation cards
 const appreciationCards = document.querySelector("[data-appreciation-cards]");
